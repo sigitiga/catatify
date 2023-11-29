@@ -15,7 +15,7 @@ export const NoteCard = ({ id, content }) => {
         await fetch(`https://devscale-mockapi.fly.dev/api/collections/notes/records/${id}`, {
             method: "DELETE",
         });
-    
+        console.log(id);
         router.refresh();
     }
 

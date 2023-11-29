@@ -18,7 +18,7 @@ export default async function Page() {
         <h1 className="text-xl font-medium">Catatify ✍️ </h1>
       </div>
       <NoteInput/>
-        <div className="py-4">
+        <div className="flex flex-col py-4 gap-5">
         {items.map(({ id, content }) => {
           return <NoteCard id={id} content={content}/>
         })}
